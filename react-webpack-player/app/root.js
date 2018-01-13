@@ -13,7 +13,7 @@ let Root = React.createClass({
 	getInitialState(){
 		return {
 			musicList:MUSIC_LIST,
-			currentMusicItem:MUSIC_LIST[0]
+			currentMusicItem:MUSIC_LIST[1]
 		}
 	},
 	componentDidMount(){
@@ -37,7 +37,10 @@ let Root = React.createClass({
 		return (
 			<div>
 				<Header />
-				<MusicList currentMusicItem={this.state.currentMusicItem} musicList={this.state.musicList}></MusicList>
+				<MusicList
+				 currentMusicItem={this.state.currentMusicItem}
+				 musicList={this.state.musicList}>
+				</MusicList>
 				
 			</div>
 		);

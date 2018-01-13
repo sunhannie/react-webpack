@@ -18,3 +18,21 @@ background:#2f9842;
 root仅仅进行页面的管理，把之前的player逻辑分离到player.js中
 从网上获取接口？
 <Player currentMusicItem={this.state.currentMusicItem}></Player>
+
+focus={item === this.props.currentMusicItem} 
+// <li className={`components-musiclistitem row${this.props.focus ? ' focus' : ''}`} >
+
+	return ( 
+				<li>
+				<MusicListItem
+				key={item.id}
+				musicItem={item}>
+				{item.title}
+				</MusicListItem>
+			</li>
+				);
+			括号不能少
+
+			react-router
+
+			注册个人信息
