@@ -13,7 +13,7 @@ let Root = React.createClass({
 	getInitialState(){
 		return {
 			musicList:MUSIC_LIST,
-			currentMusicItem:MUSIC_LIST[1]
+			currentMusicItem:MUSIC_LIST[2]
 		}
 	},
 	componentDidMount(){
@@ -22,7 +22,8 @@ let Root = React.createClass({
 			// 		mp3:'http://v.ftimg.net/album/The%20life%20of%20a%20song%20Misirlou.mp3'
 			ready: function () {
 				$(this).jPlayer('setMedia', {
-					mp3: 'http://oj4t8z2d5.bkt.clouddn.com/%E9%AD%94%E9%AC%BC%E4%B8%AD%E7%9A%84%E5%A4%A9%E4%BD%BF.mp3'
+					// mp3: 'http://oj4t8z2d5.bkt.clouddn.com/%E9%AD%94%E9%AC%BC%E4%B8%AD%E7%9A%84%E5%A4%A9%E4%BD%BF.mp3'
+					mp3:`${this.state.currentMusicItem.file}`
 				}).jPlayer('play');
 			},
 			supplied: 'mp3',
