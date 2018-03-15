@@ -34,5 +34,6 @@ focus={item === this.props.currentMusicItem}
 			括号不能少
 
 			react-router
+			
 
 			注册个人信息
